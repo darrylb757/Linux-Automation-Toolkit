@@ -1,10 +1,10 @@
-**Linux Automation Toolkit
+*Linux Automation Toolkit
 
 A lightweight Linux operations automation toolkit built with Bash and Python.
 
 This project demonstrates system monitoring, log analysis, automated service remediation, and scheduled execution using cron — simulating real-world DevOps and SRE operational workflows.
 
-**Overview
+*Overview
 
 The Linux Automation Toolkit provides:
 
@@ -20,7 +20,7 @@ The Linux Automation Toolkit provides:
 
 This project is designed to simulate basic self-healing infrastructure behavior and operational automation practices used in production environments.
 
-**Project Structure:
+*Project Structure:
 
 linux-automation-toolkit/
 │
@@ -47,7 +47,7 @@ linux-automation-toolkit/
 
 What This Project Demonstrates
 
-**This toolkit showcases:
+*This toolkit showcases:
 
 - Linux system administration
 
@@ -63,7 +63,7 @@ What This Project Demonstrates
 
 - Basic auto-remediation patterns
 
-**Requirements:
+*Requirements:
 
 - Linux (Ubuntu, Debian, RHEL, CentOS)
 
@@ -75,7 +75,7 @@ What This Project Demonstrates
 
 - cron service running
 
-**Setup Instructions:
+*Setup Instructions:
 1. Clone Repository
 git clone https://github.com/yourusername/linux-automation-toolkit.git
 cd linux-automation-toolkit
@@ -172,7 +172,7 @@ It reflects real-world responsibilities such as:
 
 - Future Enhancements
 
-**Possible improvements:
+*Possible improvements:
 
 Email or Slack notifications, 
 JSON output formatting, 
