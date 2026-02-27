@@ -1,26 +1,27 @@
-Linux Automation Toolkit
+**Linux Automation Toolkit
 
 A lightweight Linux operations automation toolkit built with Bash and Python.
 
 This project demonstrates system monitoring, log analysis, automated service remediation, and scheduled execution using cron — simulating real-world DevOps and SRE operational workflows.
 
-Overview
+**Overview
 
 The Linux Automation Toolkit provides:
 
-System health monitoring (CPU, memory, disk, uptime)
+- System health monitoring (CPU, memory, disk, uptime)
 
-Automatic service health checks and restarts
+- Automatic service health checks and restarts
 
-Log scanning for error patterns
+- Log scanning for error patterns
 
-Centralized logging
+- Centralized logging
 
-Scheduled execution via cron
+- Scheduled execution via cron
 
 This project is designed to simulate basic self-healing infrastructure behavior and operational automation practices used in production environments.
 
-Project Structure
+**Project Structure:
+
 linux-automation-toolkit/
 │
 
@@ -46,41 +47,43 @@ linux-automation-toolkit/
 
 What This Project Demonstrates
 
-This toolkit showcases:
+**This toolkit showcases:
 
-Linux system administration
+- Linux system administration
 
-Bash scripting
+- Bash scripting
 
-Python automation
+- Python automation
 
-Log parsing and analysis
+- Log parsing and analysis
 
-systemd service management
+- systemd service management
 
-Cron scheduling
+- Cron scheduling
 
-Basic auto-remediation patterns
+- Basic auto-remediation patterns
 
-Requirements
+**Requirements:
 
-Linux (Ubuntu, Debian, RHEL, CentOS)
+- Linux (Ubuntu, Debian, RHEL, CentOS)
 
-Bash
+- Bash
 
-Python 3.8+
+- Python 3.8+
 
-systemd-based system
+- systemd-based system
 
-cron service running
+- cron service running
 
-Setup Instructions
+**Setup Instructions:
 1. Clone Repository
 git clone https://github.com/yourusername/linux-automation-toolkit.git
 cd linux-automation-toolkit
+
 2. Create Python Virtual Environment
 python3 -m venv .venv
 source .venv/bin/activate
+
 3. Make Scripts Executable
 chmod +x bin/*.sh
 chmod +x python/logscan.py
@@ -90,17 +93,17 @@ Run Full Toolkit
 
 This will:
 
-Perform system health check
+- Perform system health check
 
-Verify critical services
+- Verify critical services
 
-Restart inactive services
+- Restart inactive services
 
-Scan logs for error signals
+- Scan logs for error signals
 
-Output results to the logs/ directory
+- Output results to the logs/ directory
 
-Scheduling via Cron
+- Scheduling via Cron
 
 To automate execution daily at 9 AM:
 
@@ -112,34 +115,15 @@ Add:
 
 This ensures:
 
-Correct environment loading
-
-Virtual environment activation
-
-Output and error logging
-
-Daily execution without manual intervention
-
-Key Components
-healthcheck.sh
-
-Collects CPU, memory, disk usage
-
-Displays uptime and load
-
-Retrieves recent warning logs
-
-Writes output to timestamped log file
-
-autorestart.sh
-
-Checks specified systemd services
-
-Attempts restart if inactive
-
+Correct environment loading, Virtual environment activation, 
+Output and error logging, Daily execution without manual intervention,
+Key Components, healthcheck.sh, Collects CPU, memory, disk usage, 
+Displays uptime and load, Retrieves recent warning logs, 
+Writes output to timestamped log file, autorestart.sh, 
+Checks specified systemd services, Attempts restart if inactive, 
 Logs remediation attempts
 
-Service list can be modified inside the script:
+ Service list can be modified inside the script:
 
 SERVICES=("ssh" "cron")
 logscan.py
@@ -148,16 +132,7 @@ Scans system logs
 
 Searches for patterns such as:
 
-error
-
-failed
-
-panic
-
-critical
-
-Outputs frequency summary
-
+error, failed, panic, critical, Outputs frequency summary, 
 Displays sample matching lines
 
 Example usage:
@@ -167,48 +142,42 @@ Logging
 
 All logs are stored in:
 
-logs/
+- logs/
 
-Logs are timestamped for traceability and auditing.
+- Logs are timestamped for traceability and auditing.
 
-Why This Project Was Built
+- Why This Project Was Built
 
 This project was built to:
 
-Demonstrate Linux operational automation
+- Demonstrate Linux operational automation
 
-Simulate basic monitoring and remediation workflows
+- Simulate basic monitoring and remediation workflows
 
-Practice scripting and system troubleshooting
+- Practice scripting and system troubleshooting
 
-Reinforce DevOps and SRE principles
+- Reinforce DevOps and SRE principles
 
-Showcase infrastructure reliability thinking
+- Showcase infrastructure reliability thinking
 
 It reflects real-world responsibilities such as:
 
-Monitoring system health
+- Monitoring system health
 
-Automating routine checks
+- Automating routine checks
 
-Implementing self-healing mechanisms
+- Implementing self-healing mechanisms
 
-Reducing manual operational overhead
+- Reducing manual operational overhead
 
-Future Enhancements
+- Future Enhancements
 
-Possible improvements:
+**Possible improvements:
 
-Email or Slack notifications
-
-JSON output formatting
-
-Integration with Jenkins pipeline
-
-Docker containerization
-
-Unit tests for Python log scanner
-
-systemd timer replacement for cron
-
+Email or Slack notifications, 
+JSON output formatting, 
+Integration with Jenkins pipeline, 
+Docker containerization, 
+Unit tests for Python log scanner, 
+systemd timer replacement for cron, 
 Ansible deployment playbook
